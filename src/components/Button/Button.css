@@ -1,0 +1,15 @@
+.button {
+    background-color: var(--pink);
+    border-radius: 100%;
+    border: none;
+    color: var(--off-white);
+    cursor: pointer;
+    font-family: inherit;    
+    font-size: 2rem;
+    height: 50px;
+    margin-bottom: 5rem;
+    position:absolute;
+    width: 50px;
+    top: 80%;
+    left: calc(50% - 25px);
+}
