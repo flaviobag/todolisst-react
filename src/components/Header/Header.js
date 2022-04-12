@@ -10,8 +10,4 @@ const Header = () => (
         <Button type="button">+</Button>
     </header>
 )
-
-
-
-
 export default Header

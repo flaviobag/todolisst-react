@@ -1,0 +1,37 @@
+.card {	
+    background-color: var(--purple);
+    border-radius: 8px;
+    color: var(--off-white);
+    list-style: none;
+    margin: 0.625rem;
+    min-height: 170px;
+    padding: 0.938rem;
+    position: relative;
+    width: 170px;
+}
+
+.button-del {
+    background-color: transparent;
+    border: none;
+    bottom: 4px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 4px;
+}
+
+.card__label {
+    cursor: pointer;
+}
+
+.checkbox:checked + .card__label {
+    text-decoration: line-through;
+}
+.card:hover .button-del {
+    display: block;
+}
+
+.button-del__image {
+    height: 15px;
+    width: 15px;
+}

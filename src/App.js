@@ -1,6 +1,8 @@
 import Header from './components/Header/Header';
 import Form from './components/Form/Form';
+import List from './components/List/List';
 import './App.css';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <Header/>
         <main>
           <Form/>
+          <List/>
         </main>
       </div>
     </div>
