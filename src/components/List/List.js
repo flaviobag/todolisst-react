@@ -3,10 +3,15 @@ import './List.css';
 import Card from "../Card/Card";
 
 
-const List = () => (
+const List = ({cards}) => {
+    
+    return(
     <ul data-list className="cards">
-        <Card id="1" title="Qualquer coisa"/>
-        <Card id="2" title="Outra Coisa"/>
+        {
+            cards.map((card) => (<Card id={card.id} title={card.title}/>))
+        }
     </ul>
-)
+)}
+
+
 export default List
