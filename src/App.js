@@ -12,14 +12,16 @@ function App() {
     {id: 3, title: "Repete a outra coisa"}
   ])
   
+  const addNewCard = (item) => {
+    setCards([...cards, item])
+  }
   return (
     <div className="container">
       <div className="main-card">
         <Header/>
         <main>
-          <Form/>
+          <Form addNewCard={addNewCard}/>
           <List cards={cards}/>
-          <button onClick={() => setCards([...cards,{id: 4, title: "Repete a outra coisa de novo"}])}>click me</button>
         </main>
       </div>
     </div>
