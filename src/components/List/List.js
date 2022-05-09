@@ -8,7 +8,7 @@ const List = ({cards}) => {
     return(
     <ul className="cards">
         {
-            cards.map((card) => (<Card id={card.id} title={card.title}/>))
+            cards.map((card, index) => (<Card key={index} id={card.id} title={card.title}/>))
         }
     </ul>
 )}

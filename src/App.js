@@ -11,16 +11,21 @@ function App() {
     {id: 2, title: "Outra Coisa"},
     {id: 3, title: "Repete a outra coisa"}
   ])
-  
+  const [open, setOpen] = React.useState(false)
+
   const addNewCard = (item) => {
     setCards([...cards, item])
   }
+
+  
   return (
     <div className="container">
       <div className="main-card">
-        <Header/>
+        <Header setOpen={setOpen} open={open} />
         <main>
-          <Form addNewCard={addNewCard}/>
+          {
+            open && <Form addNewCard={addNewCard}/>
+          }
           <List cards={cards}/>
         </main>
       </div>

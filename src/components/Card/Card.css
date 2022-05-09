@@ -23,6 +23,9 @@
 .card__label {
     cursor: pointer;
 }
+.checkbox {
+    display: none;
+}
 
 .checkbox:checked + .card__label {
     text-decoration: line-through;
