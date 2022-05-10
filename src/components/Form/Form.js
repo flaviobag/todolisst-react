@@ -7,6 +7,7 @@ const Form = ({addNewCard}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         addNewCard({id:4, title})    
+        setTitle('')
     }
     return (
         <form className="form" onSubmit={handleSubmit}>    

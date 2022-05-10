@@ -26,7 +26,7 @@ function App() {
           {
             open && <Form addNewCard={addNewCard}/>
           }
-          <List cards={cards}/>
+          <List cards={cards} setCards={setCards}/>
         </main>
       </div>
     </div>
