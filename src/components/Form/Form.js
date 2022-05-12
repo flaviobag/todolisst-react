@@ -1,12 +1,14 @@
 import React from "react";
+import { postItems } from "../../api/config";
 import Field from "../Field/Field";
 import "./Form.css"
 
 const Form = ({addNewCard}) => {
     const [title, setTitle] = React.useState('')
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        addNewCard({id:4, title})    
+        const newItem = await postItems({title})
+        addNewCard(newItem)    
         setTitle('')
     }
     return (

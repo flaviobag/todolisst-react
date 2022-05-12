@@ -1,6 +1,6 @@
 import React from "react";
 import './Card.css';
-import DeleteImage from "../../icons/delete.png" 
+import DeleteImage from "../../icons/delete.png"
 
 
 const Card = ({id, title, handleDelete}) => (
