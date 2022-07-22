@@ -1,6 +1,74 @@
-# Getting Started with Create React App
+# Todolist usando REACT
+## Continuação do projeto todolist mas agora usando o REACT 💻
+https://github.com/flaviobag/todolist
+<img align="right" alt="screenshot" src="https://user-images.githubusercontent.com/92397080/180434432-58b118a4-7822-440b-b1af-573855772c43.png" width="400px" />
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição 📝
+- Um aplicativo web para gerir suas coisas a fazer!
+- Nele temos um cabeçalho com a data e hora atuais!
+- Uma menssagem de acordo com a hora do dia e a quantidade de coisas a fazer!
+
+### Tecnologias utilizadas
+- HTML5
+- css3
+- javascript
+
+## Começando
+ 
+Você irá precisar ter instalado o YARN ou NPM para usar essa aplicação ⬇️
+
+Clone o projeto usando o git clone 
+```
+git clone https://github.com/flaviobag/todolist-react
+```
+Rode o comando para instalar as dependencias, pode ser o :
+```
+npm install
+```
+ou
+```
+yarn install
+```
+Para rodar o projeto :
+```
+npm start
+```
+ou 
+```
+yarn start
+```
+
+## Rodando o JSON server
+
+Para ter a total funcionalidade do aplicativo, teremos que ter um servidor rodando em sua máquina, utilizaremos o json server.
+Para começar instale o json server usando o comando
+```
+npm install -g json-server
+```
+Depois temos que criar um file chamado db.json com a seguinte estrutura 
+```
+{
+  "notes": [
+    {
+      "value": "Tarefa 1",
+      "id": 1
+    },
+    {
+      "value": "Tarefa 2",
+      "id": 2
+    }
+  ]
+}
+```
+Em seguida temos que iniciar esse server local com o comando
+```
+json-server --watch db.json
+```
+
+## Melhorias previstas
+
 
 ## Available Scripts
 
