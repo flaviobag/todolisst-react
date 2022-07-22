@@ -10,10 +10,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Nele temos um cabeçalho com a data e hora atuais!
 - Uma menssagem de acordo com a hora do dia e a quantidade de coisas a fazer!
 
-### Tecnologias utilizadas
-- HTML5
-- css3
-- javascript
+
+## ✔️ Técnicas e tecnologias utilizadas
+
+- ``JapaScript``
+- ``HTML5``
+- ``CSS/SASS``
+- ``VS Code``
 
 ## Começando
  
